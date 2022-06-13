@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    color: #333;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+
+header {
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #ccc;
+
+}
+
+header h1 {
+    line-height: 60px;
+    display: inline-block;
+}
+
+.search-btn {
+    font-size: 32px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#news .item-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#news .item-publish {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lighbox {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 800px;
+    height: 100px;
+    z-index: 51;
+    background-color: #fff;
+    margin: auto;
+}
+
+.lighbox a {
+    float: right;
+}
+
+.lighbox a:hover {
+    cursor: pointer;
+}
+
+.lighbox-search {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.background-lighbox {
+    z-index: 50;
+    opacity: 1;
+}
+/* Trên tablet */
+@media only screen and (max-width: 1024px) and (min-width: 740px) {
+    .lighbox {
+        width: 400px;
+        top: 10%;
+    }
+}
+
+/* Trên Điện thoại */
+@media only screen and (max-width: 740px) {
+    .lighbox {
+        top: 16%;
+        left: 10%;
+        width: 70%;
+        max-width: 300px;
+        height: 100px;
+    }
+
+    .lighbox-search {
+        text-align: center;
+    }
+
+    .lighbox-search label {
+        font-size: 14px;
+        display: block;
+    }
+
+    .lighbox-search input {
+        font-size: 14px;
+        display: block;
+        margin: 10px 0px 10px;
+        text-align: center;
+
+    }
+
+    .lighbox-search button {
+        font-size: 14px;
+
+    }
+}
+
+/* Loading */
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
